@@ -1,0 +1,181 @@
+header{
+	min-height: 100vh;
+
+	background: -webkit-linear-gradient(90deg, rgba(135, 133, 255, 0.95) 5%, rgba(51, 180, 255, 0.9) 100%), url(../assets/header_image.jpg);
+	background: -moz-linear-gradient(90deg, rgba(135, 133, 255, 0.95) 5%, rgba(51, 180, 255, 0.9) 100%) url(../assets/header_image.jpg);
+	background: -o-linear-gradient(90deg, rgba(135, 133, 255, 0.95) 5%, rgba(51, 180, 255, 0.9) 100%) url(../assets/header_image.jpg);
+	background: -ms-linear-gradient(90deg, rgba(135, 133, 255, 0.95) 5%, rgba(51, 180, 255, 0.9) 100%) url(../assets/header_image.jpg);
+	background: linear-gradient(0deg, rgba(135, 133, 255, 0.95) 5%, rgba(51, 180, 255, 0.9) 100%) url(../assets/header_image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	ul{
+	display: flex;
+	}
+	li{
+		transition: all 0.5s ease-in-out;
+		&:hover{
+			transform: scale(1.2);
+		}
+	}
+	a{
+		color: #ffffff;
+		font-size: 1.3rem;
+		font-weight: 400;
+		padding-right: 40px;
+		transition: all 0.3s ease-in-out;
+		@include respond-to(small){
+			padding-right: 0;
+		}
+		&:hover{
+			text-decoration: underline;
+			color: red;
+		}
+	}
+}
+
+nav{
+	padding-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #7aceff;
+	@include respond-to(large){
+		justify-content: space-around;
+	}
+	@include respond-to(medium){
+		display: block;
+	}
+	@include respond-to(small){
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+.navResponsive{
+	display: none;
+	@include respond-to(small){
+		font-size: 2.5rem;
+		display: inline-block;
+		color: #fff;
+
+	}
+}
+
+.headerInfo{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	@include respond-to(medium){
+		width: 70%;
+		margin: 0 auto;
+	}
+	@include respond-to(small){
+		width: 90%;
+		margin: 0 auto;
+	}
+	p{
+		color: white;
+		font-size: 2.2rem;
+		margin: 0 0 15px 0;
+		@include respond-to(medium){
+			font-size: 1.3rem;
+			text-align: center;
+		}
+		@include respond-to(small){
+			text-align: center;
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
+	}
+}
+
+.headerFlex{
+	display: flex;
+	align-items: center;
+	@include respond-to(medium){
+		justify-content: center;
+		padding-top: 20px;
+	}
+	@include respond-to(small){
+		position: relative;
+		padding-top: 0;
+	}
+}
+
+.subNav{
+	@include respond-to(small){
+		position: absolute;
+		bottom: 0;
+		top: 120%;
+		right: 0px;
+	}
+	ul{
+		@include respond-to(small){
+			padding: 0;
+		}
+	}
+	a{
+		@include respond-to(small){
+			padding: 10px;
+			font-size: 15px;
+		}
+	}
+}
+
+.hidden{
+	@include respond-to(small){
+		display: none;
+	}
+}
+
+.headerLoginButton button{
+	color: #fff;
+	background: none;
+	padding: 7px 10px;
+	margin-right: 20px;
+	border: 1px solid #fff;
+	transition: all 0.5s ease-in-out;
+	&:hover{
+		transform: scale(1.2);
+		@include respond-to(small){
+			transform: none;
+		}
+	}
+	@include respond-to(medium){
+		display: none;
+	}
+	@include respond-to(small){
+		display: block;
+	}
+}
+
+.headerSignupButton button{
+	color: #1ca8dd;
+	padding: 7px 10px;
+	transition: all 0.5s ease-in-out;
+	&:hover{
+		transform: scale(1.2);
+		@include respond-to(small){
+			transform: none;
+		}
+	}
+	@include respond-to(medium){
+		display: none;
+	}
+	@include respond-to(small){
+		display: block;
+	}
+}
+
+.headerLogo{
+	@include respond-to(small){
+		padding-top: 7px;
+	}
+	@include respond-to(medium){
+		text-align: center;
+	}
+}
+

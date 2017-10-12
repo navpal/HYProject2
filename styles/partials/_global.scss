@@ -1,0 +1,125 @@
+html{
+	font-size: 62.5%;
+	font-family: $OpenSansFont;
+}
+
+body{
+	flex-wrap: wrap;
+}
+
+img{
+	max-width: 100%;
+}
+
+h1{
+	color: $h1color;
+	font-size: 5rem;
+	font-weight: 600;
+	line-height: 7.2623rem;
+	text-align: center;
+	transform: scaleX(1.0001);
+	margin: 0 0 20px 0;
+	@include respond-to(medium){
+		font-size: 2.7rem;
+	}
+	@include respond-to(small){
+		font-size: 3.5rem;
+		line-height: 4rem;
+		padding-bottom: 30px;
+	}
+}
+
+h2{
+	color:  $h2color;
+	font-size: 4rem;
+	font-weight: 600;
+	line-height: 5.5rem;
+	text-align: left;
+	margin: 0;
+	@include respond-to(small){
+		font-size: 3rem;
+	}
+}
+
+h3{
+	color: $h3color;
+	font-size: 3.1rem;
+	font-weight: 400;
+	text-align: center;
+	transform: scaleX(1.0001);
+	margin: 0;
+	padding: 0;
+	@include respond-to(small){
+		font-size: 4rem;
+	}
+}
+h4{
+	color: $h4color;
+	font-size: 3.095rem;
+	font-weight: 400;
+	text-align: center;
+	transform: scaleY(1.0017);
+	margin: 0;
+	@include respond-to(small){
+		font-size: 4rem;
+	}
+}
+
+h5{
+	color: $h5color;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h6{
+	color: $h6color;
+	font-size: 1.396rem;
+	font-weight: 400;
+	line-height: 1.797rem;
+	text-align: center;
+	transform: scaleY(1.0029);
+	text-transform: uppercase;
+	margin: 0;
+}
+
+p{
+	color: #6d6d6d;
+	margin: 0;
+
+}
+
+button{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	background: white;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	transform: scaleX(1.0001);
+}
+
+.wrapper{
+	max-width: $wrapper;
+	margin: 0 auto;
+	@include respond-to(medium){
+		max-width: 700px;
+	}
+}
+
+
